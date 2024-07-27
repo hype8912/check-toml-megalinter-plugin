@@ -1,0 +1,25 @@
+---
+descriptor_id: checktoml
+descriptor_type: format
+descriptor_flavors:
+  - all
+file_extensions:
+  - ".toml"
+lint_all_other_linters_files: true
+linters:
+  # check-toml
+  - linter_name: check-toml
+    is_formatter: false
+    linter_repo: https://github.com/hype8912/check-toml-megalinter-plugin
+    linter_url: https://github.com/hype8912/check-toml-megalinter-plugin
+    cli_help_arg_name: "--help"
+    cli_lint_fix_arg_name: "--megalinter-fix-flag" # Workaround for MegaLinter
+    cli_lint_mode: project
+    lint_all_files: true
+    cli_lint_errors_count: total_lines
+    examples:
+      - "check-toml"
+      - "check-toml pyproject.toml"
+    install:
+      dockerfile:
+        - RUN pip install pre-commit-hooks
