@@ -24,13 +24,14 @@ linters:
       - "check-toml"
       - "check-toml pyproject.toml"
     install:
-      pip:
-        - pre-commit-hooks
+      dockerfile:
+        - RUN pip install pre-commit-hooks
   # toml-validator
   - linter_name: toml-validator
     is_formatter: false
     linter_repo: https://github.com/staticdev/toml-validator
     linter_url: https://tomlkit.readthedocs.io
+    linter_version_cache: 1.5.1
     cli_help_arg_name: "--help"
     cli_version_arg_name: "--version"
     cli_lint_fix_arg_name: "--megalinter-fix-flag" # Workaround for MegaLinter
@@ -41,5 +42,5 @@ linters:
       - "toml-validator ."
       - "toml-validator pyproject.toml"
     install:
-      pip:
-        - toml-validator
+      dockerfile:
+        - RUN pip install toml-validator
