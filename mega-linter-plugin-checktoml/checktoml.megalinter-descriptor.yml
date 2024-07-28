@@ -17,7 +17,7 @@ linters:
     linter_version_cache: 4.6.0
     cli_help_arg_name: "--help"
     cli_lint_fix_arg_name: "--megalinter-fix-flag" # Workaround for MegaLinter
-    cli_lint_mode: list_of_files
+    cli_lint_mode: file
     lint_all_files: true
     cli_lint_errors_count: total_lines
     examples:
