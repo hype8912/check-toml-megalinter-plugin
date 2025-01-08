@@ -14,7 +14,7 @@ linters:
     is_formatter: false
     linter_repo: https://github.com/pre-commit/pre-commit-hooks
     linter_url: https://github.com/pre-commit/pre-commit-hooks
-    linter_version_cache: 4.6.0
+    linter_version_cache: 5.0.0
     cli_help_arg_name: "--help"
     cli_lint_fix_arg_name: "--megalinter-fix-flag" # Workaround for MegaLinter
     cli_lint_mode: file
