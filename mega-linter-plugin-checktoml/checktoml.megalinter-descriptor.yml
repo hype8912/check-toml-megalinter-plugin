@@ -13,6 +13,7 @@ linters:
   - linter_name: check-toml
     is_formatter: false
     linter_repo: https://github.com/pre-commit/pre-commit-hooks
+    linter_spdx_license: MIT
     linter_url: https://github.com/pre-commit/pre-commit-hooks
     linter_version_cache: 5.0.0
     cli_help_arg_name: "--help"
@@ -30,6 +31,7 @@ linters:
   - linter_name: toml-validator
     is_formatter: false
     linter_repo: https://github.com/staticdev/toml-validator
+    linter_spdx_license: MIT
     linter_url: https://tomlkit.readthedocs.io
     linter_version_cache: 1.5.1
     cli_help_arg_name: "--help"
